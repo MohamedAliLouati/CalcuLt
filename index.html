@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" href="Image/LOGO_CALCULT.png">
+        <link rel="stylesheet" href="CSS/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CalcuLt</title>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="BoxImg"><img src="Image/LOGO_CALCULT.png" alt></div>
+            <div class="ecran">
+                <input type="text" id="ecran" readonly>
+            </div>
+            <div class="keys">
+                <div class="Ligne">
+                    <input type="button" disabled class="red" value="N/F">
+                    <button class="blue" onclick="Calcul('(')">(</button>
+                    <button class="blue" onclick="Calcul(')')">)</button>
+                    <button class="blue" onclick="Calcul('/')">/</button>
+                </div>
+                <div class="Ligne">
+                    <button class="grey" onclick="Calcul('7')">7</button>
+                    <button class="grey" onclick="Calcul('8')">8</button>
+                    <button class="grey" onclick="Calcul('9')">9</button>
+                    <button class="blue" onclick="Calcul('*')">*</button>
+                </div>
+                <div class="Ligne">
+                    <button class="grey" onclick="Calcul('4')">4</button>
+                    <button class="grey" onclick="Calcul('5')">5</button>
+                    <button class="grey" onclick="Calcul('6')">6</button>
+                    <button class="blue" onclick="Calcul('-')">-</button>
+                </div>
+                <div class="Ligne">
+                    <button class="grey" onclick="Calcul('1')">1</button>
+                    <button class="grey" onclick="Calcul('2')">2</button>
+                    <button class="grey" onclick="Calcul('3')">3</button>
+                    <button class="blue" onclick="Calcul('+')">+</button>
+                </div>
+                <div class="Ligne">
+                    <button class="grey" onclick="Calcul('0')">0</button>
+                    <button class="blue" onclick="Calcul('.')">.</button>
+                    <button class="red" onclick="Calcul('C')">C</button>
+                    <button class="blue" onclick="Calcul('=')">=</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="JS/Script.js"></script>
+    </body>
+</html>
